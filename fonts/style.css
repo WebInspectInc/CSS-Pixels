@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'pixelFont';
+	src:url('fonts/pixelFont.eot');
+	src:url('fonts/pixelFont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/pixelFont.svg#pixelFont') format('svg'),
+		url('fonts/pixelFont.woff') format('woff'),
+		url('fonts/pixelFont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'pixelFont';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'pixelFont';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-pencil:before {
+	content: "\e000";
+}
+.icon-eraser:before {
+	content: "\e003";
+}
+.icon-zoom-out:before {
+	content: "\e004";
+}
+.icon-zoom-in:before {
+	content: "\e005";
+}
